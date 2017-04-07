@@ -34,7 +34,7 @@ Remember **root==Übermensch**, so there's no 100% way to check for root.
 
 
 ### Root cloakers
-We've tested the IAmRoot lib and it shows an indication of root when testing with the following root cloak apps. However Rootbeer is defeated when using a combination of the root cloakers activated at the same time.
+We've tested the IAmRoot lib and it shows an indication of root when testing with the following root cloak apps. However IAmRoot is defeated when using a combination of the root cloakers activated at the same time.
 
 Tested cloakers:
 
@@ -71,14 +71,13 @@ The following devices are known the have the busybox binary present on the stock
 * Moto E
 
 ### How To Use
-To include the library using gradle, just add the following:
+To use the library using gradle, just add the following:
 
 ```java
 dependencies {
-    compile 'com.scottyab:rootbeer-lib:0.0.6'
+    compile 'com.github.joielechong:iamroot:0.0.7'
 }
 ```
-Or use this [Jitpack.io link](https://jitpack.io/#scottyab/rootbeer)
 
 ### Building 
 The native library in this application will now be built via Gradle and the latest Android Studio without having to resort to the command line. However the .so files are also distributed in this repository for those who cannot compile using the NDK for some reason.
