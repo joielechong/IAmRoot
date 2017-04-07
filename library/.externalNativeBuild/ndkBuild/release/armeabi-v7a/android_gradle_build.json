@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/home/rio/TEST/IamRoot/library/src/main/jni/Android.mk",
+    "/home/rio/TEST/IamRoot/library/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/opt/android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/rio/TEST/IamRoot/library/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/rio/TEST/IamRoot/library/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-9 NDK_OUT\u003d/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/release/lib clean"
+  ],
+  "libraries": {
+    "tool-checker-release-armeabi-v7a": {
+      "buildCommand": "/opt/android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/rio/TEST/IamRoot/library/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/rio/TEST/IamRoot/library/src/main/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-9 NDK_OUT\u003d/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/release/lib /home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libtool-checker.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "tool-checker",
+      "files": [
+        {
+          "src": "/home/rio/TEST/IamRoot/library/src/main/jni/toolChecker.cpp",
+          "flags": "\"-gcc-toolchain\" \"/opt/android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv7-none-linux-androideabi\" \"-march\u003darmv7-a\" \"-mfloat-abi\u003dsoftfp\" \"-mfpu\u003dvfpv3-d16\" \"-fno-exceptions\" \"-fno-rtti\" \"-mthumb\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-I/opt/android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/home/rio/TEST/IamRoot/library/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"/opt/android/sdk/ndk-bundle/platforms/android-9/arch-arm\""
+        }
+      ],
+      "output": "/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libtool-checker.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cppCompilerExecutable": "/opt/android/sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

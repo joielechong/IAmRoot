@@ -1,0 +1,17 @@
+Executable : /opt/android/sdk/ndk-bundle/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/home/rio/TEST/IamRoot/library/src/main/jni/Android.mk
+NDK_APPLICATION_MK=/home/rio/TEST/IamRoot/library/src/main/jni/Application.mk
+APP_ABI=armeabi-v7a
+NDK_ALL_ABIS=armeabi-v7a
+NDK_DEBUG=1
+APP_PLATFORM=android-9
+NDK_OUT=/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=/home/rio/TEST/IamRoot/library/build/intermediates/ndkBuild/debug/lib
+APP_SHORT_COMMANDS=false
+LOCAL_SHORT_COMMANDS=false
+-B
+-n
+jvmArgs : 
+

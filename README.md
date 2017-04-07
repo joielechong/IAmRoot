@@ -1,4 +1,4 @@
-# RootBeer ![image](./app/src/main/res/mipmap-xhdpi/ic_launcher.png)
+# IAmRoot ![image](./app/src/main/res/mipmap-xhdpi/ic_launcher.png)
 
 A tasty root checker library and sample app. We've scoured the internets for different methods of answering that age old question... **Has this device got root?**  
 
@@ -26,15 +26,15 @@ We call through to our native root checker to run some of it's own checks. Nativ
 
 ## Disclaimer and limitations!
 
-We love root! both [Scott](https://github.com/scottyab) and [Mat](https://github.com/stealthcopter) (the main contributors) use rooted devices. But we appreciate sometimes you might want to have a indication your app is running on a rooted handset. Plus we wanted to see if we could beat the root cloakers. So that's what this library gives you, an *indication* of root. 
+We love root! But we do know sometimes you might want to have a indication your app is running on a rooted handset. Plus we wanted to see if we could beat the root cloakers. So that's what this library gives you, an *indication* of root.
 
-Remember **root==god**, so there's no 100% way to check for root.
+Remember **root==Übermensch**, so there's no 100% way to check for root.
 
-<img src="./art/rootbeerjesus.png" width=200 />
+<img src="./art/trees-1949497_640.png" height=320 width=320 />
 
 
 ### Root cloakers
-We've tested the Rootbeer lib and it shows an indication of root when testing with the following root cloak apps. However Rootbeer is defeated when using a combination of the root cloakers activated at the same time. 
+We've tested the IAmRoot lib and it shows an indication of root when testing with the following root cloak apps. However Rootbeer is defeated when using a combination of the root cloakers activated at the same time.
 
 Tested cloakers:
 
@@ -46,8 +46,8 @@ Tested cloakers:
 
 
 ```java
-RootBeer rootBeer = new RootBeer(context);
-if(rootBeer.isRooted()){
+IAmRoot iamRoot = new IAmRoot(context);
+if(iamRoot.isRooted()){
     //we found indication of root
 
 }else{
@@ -63,15 +63,15 @@ You can also call each of the checks individually as the sample app does.
 Note that sometimes the `isRooted()` method can return a false positive. This is often because the manufacturer of the device rom has left the busybox binary. This alone doesn't mean that the device is rooted, if you wish to avoid this but still use a convenience method to you can use the following:
 
 ```java
-rootBeer.isRootedWithoutBusyBoxCheck()
+iamRoot.isRootedWithoutBusyBoxCheck()
 ```
 
 The following devices are known the have the busybox binary present on the stock rom:
 * All OnePlus Devices
 * Moto E
 
-### Dependency
-Avaibile on [maven central](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22rootbeer-lib%22), to include using gradle just add the following: 
+### How To Use
+To include the library using gradle, just add the following:
 
 ```java
 dependencies {
@@ -82,16 +82,6 @@ Or use this [Jitpack.io link](https://jitpack.io/#scottyab/rootbeer)
 
 ### Building 
 The native library in this application will now be built via Gradle and the latest Android Studio without having to resort to the command line. However the .so files are also distributed in this repository for those who cannot compile using the NDK for some reason.
-
-### Sample app
-
-The sample app is published on Google play to allow you to quickly and easier test the library. Enjoy! And please do feedback to us if your tests produce different results. 
-
-
-<a href="https://play.google.com/store/apps/details?id=com.scottyab.rootbeer.sample&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img width="200" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" /></a>
- 
-<img width="200" alt="screenshot" src="./art/ss_got_root_fail.png">
-
 
 ## Contributing
 
@@ -116,6 +106,7 @@ Apache License, Version 2.0
 
 
 
+    Copyright (C) 2017, Joielechong
     Copyright (C) 2015, Scott Alexander-Bown, Mat Rollings
 
     Licensed under the Apache License, Version 2.0 (the "License");

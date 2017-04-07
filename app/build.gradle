@@ -5,11 +5,11 @@ android {
     buildToolsVersion buildToolsVer
 
     defaultConfig {
-        applicationId "com.scottyab.rootbeer.sample"
+        applicationId "com.rilixtech.joielechong.sample"
         minSdkVersion minSdkVer
         targetSdkVersion targetSdkVer
-        versionCode 6
-        versionName "0.6"
+        versionCode 7
+        versionName "0.7"
     }
 
     //check if the keystore details are defined in gradle.properties (this is so the key is not in github)
@@ -41,14 +41,14 @@ android {
     }
     externalNativeBuild {
         ndkBuild {
-            path '../rootbeerlib/src/main/jni/Android.mk'
+            path '../library/src/main/jni/Android.mk'
         }
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':rootbeerlib')
+    compile project(':library')
     compile "com.android.support:appcompat-v7:$supportLibVer"
     compile "com.android.support:design:$supportLibVer"
     compile 'com.nineoldandroids:library:2.4.0'
